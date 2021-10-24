@@ -3,7 +3,7 @@
   "require": {
     "ext-soap": "*",
     "php": "^7.0|^7.3",
-    "vlucas/phpdotenv": "^4.2.x-dev",
+    "vlucas/phpdotenv": "^4.2.1",
   },
   "authors" : [{
     "name" : "Alexander Fuchs",
