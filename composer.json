@@ -2,7 +2,7 @@
   "name" : "fuchsa/tma-woehrl-mission-one",
   "require": {
     "ext-soap": "*",
-    "php": "^7.1|^7.3",
+    "php": "^7.0|^7.3",
     "vlucas/phpdotenv": "^5.3"
   },
   "authors" : [{
