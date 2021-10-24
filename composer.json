@@ -10,6 +10,7 @@
     "email" : "alex-fuchs@online.de",
     "role" : "Developer"
   }],
+  "license" : "GPL-3.0-or-later",
   "autoload": {
     "psr-4": {
       "FUCHSA\\WOEHRL\\TMAService\\" : "WOEHRL/TMAService"
