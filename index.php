@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace FUCHSA\WOEHRL\TMAService;
 
+use Dotenv\Dotenv;
 use FUCHSA\WOEHRL\TMAService\Structs\ApiAuthentication;
 use FUCHSA\WOEHRL\TMAService\Structs\EmailAttachment;
 use FUCHSA\WOEHRL\TMAService\Structs\EmailAttachments;
@@ -32,7 +33,7 @@ use FUCHSA\WOEHRL\TMAService\Structs\TransactionalMailReactionInfo;
 // require PSR-4 autoloading (assumes, that composer dump-autoload was executed before)
 require __DIR__ . '/vendor/autoload.php';
 
-$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $context = stream_context_create([
@@ -148,7 +149,9 @@ try {
     //echo $client->__getLastRequestHeaders() . "\n";
     //die;
     //$client = $tma->Send($request);
+    print "<pre>";
     var_dump($result);
+    print "</pre>";
 
 } catch (Exception $e) {
     echo "<h2>Exception Error!</h2>";
